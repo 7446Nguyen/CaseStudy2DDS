@@ -2,7 +2,7 @@
 
 #load libraries####################################################################################
 library(pacman)
-p_load(tidyverse, dummies, skimr, readxl, janitor)
+p_load(tidyverse, dummies, skimr, readxl, janitor, GGally)
 
 #load data#########################################################################################
 caseData = read.csv("./data/CaseStudy2-data.csv", 
@@ -106,3 +106,6 @@ corrplot::corrplot(cor(caseDataClean_numeric)
 #'YearsSincelastPromotion and YearsAtCompany r = 0.64
 #'YearsWithCurrManger and YearsAtCompany r = 0.77
 #'YearsWithCurrManger and YearsInCurrentRole r = 0.71
+
+caseDataClean_numeric %>%
+  ggpairs()
