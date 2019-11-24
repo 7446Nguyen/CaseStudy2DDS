@@ -14,7 +14,8 @@ noAttrition = read.csv("./data/CaseStudy2CompSet No Attrition.csv",
 noSalary = read_excel("./data/CaseStudy2CompSet No Salary.xlsx")
 
 
-#Looks for duplicates and inital EDA ###############################################################
+#Look for duplicates #############################################################################
+#log transform DistanceFromHome, MonthlyIncome???
 #caseData de-duping
 skim(caseData) # no NAs
 caseData%>%
@@ -80,3 +81,28 @@ noSalaryClean = noSalary %>%
   mutate(WorkLifeBalance = as.factor(TrainingTimesLastYear))
 
 skim(noSalary)
+
+
+#EDA and Correlation plots #####################################################################
+
+caseDataClean_numeric <- caseDataClean %>% keep(is.numeric)
+
+caseDataClean_numeric = caseDataClean_numeric %>%
+  select(-StandardHours, -EmployeeCount)
+
+corrplot::corrplot(cor(caseDataClean_numeric)
+                   , title = "Correlation of Predictor Variables, Before Variable Elimination"
+                   , order = "alphabet"
+                   , tl.cex = 0.7
+                   , method = "number"
+                   , diag = T
+                   , type = "lower"
+
+)
+
+#'TotalWorkingYears and Monthly income r = 0.78
+#'TotalWorkingYears and Age r = 0.65
+#'YearsInCurrentRole and YearsAtCompany r = 0.78
+#'YearsSincelastPromotion and YearsAtCompany r = 0.64
+#'YearsWithCurrManger and YearsAtCompany r = 0.77
+#'YearsWithCurrManger and YearsInCurrentRole r = 0.71
