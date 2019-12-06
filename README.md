@@ -1,4 +1,4 @@
-# Welcome to DDSAnalytics Case Study 2: Understanding Attrition and Salary Trends repository!
+# Welcome to DDSAnalytics Case Study 2: "Understanding Attrition and Salary Trends" repository!
 
 ## Introduction
 
