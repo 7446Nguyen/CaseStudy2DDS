@@ -6,8 +6,7 @@ DDSAnalytics has chosen multiple machine learning techniques to identify prospec
 
 **Wrangling and Modeling**: Contains data manipulation, linear modeling, and classification models
 
-**data**: Contains raw data used for modeling 	Add files via upload 	12 days ago
+**data**: Contains raw data used for modeling 
 
 **predictionData**: contains predictions produced from the linear and classification models 
-
 **YouTube:** 
