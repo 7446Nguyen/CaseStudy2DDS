@@ -14,6 +14,6 @@ DDSAnalytics has chosen multiple machine learning techniques to identify prospec
 
 **caseStudy2.pdf:** This markdown file contains more detailed information on the data, analysis, and models used
 
-**caseStudy2Nguyen_Presentation.pptx**  This powerpoint presents the process used to generate and compare several machine learning techniques 
+**caseStudy2Nguyen_Presentation.pptx:**  This powerpoint presents the process used to generate and compare several machine learning techniques 
 
 **YouTube Deck Presentation:** https://youtu.be/Afq9FAA5lKc
