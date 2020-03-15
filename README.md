@@ -12,4 +12,4 @@ DDSAnalytics has chosen multiple machine learning techniques to identify prospec
 
 **predictionData**: contains predictions produced from the linear and classification models 
 
-**YouTube:** https://youtu.be/Afq9FAA5lKc
+**YouTube Deck Presentaiton:** https://youtu.be/Afq9FAA5lKc
