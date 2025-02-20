@@ -53,5 +53,3 @@ The datasets used in this project are located in the `data/` directory. These da
 ## Acknowledgments
 
 Special thanks to the faculty and peers of the **SMU MSDS program** for their guidance and support throughout this project.
-
-This README now includes the **YouTube video** with a clickable thumbnail for better visibility. Let me know if you need further refinements! 🚀
